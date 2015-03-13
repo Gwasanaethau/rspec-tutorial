@@ -1,8 +1,9 @@
 class User
   def in_role?(role)
-    true
+    role == @role
   end
 
   def assign_role(role)
+    @role = role
   end
 end
